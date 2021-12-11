@@ -10,7 +10,6 @@ body{
 
 .scroll-container{
   height:106000px;
-  /* background-colorwhite; */
 }
 
 a {
@@ -20,25 +19,18 @@ a {
 
 
 #scene-container{
-  /* position:fixed;
-  top:0px;sc
-  left:0px; */
-  /* width:100vw;
-  height:100vh; */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width:1440px;
   height:900px;
-  /* background-color: rgba(255,0,0,.2); */
 }
 
 .scene-el{
   opacity:0;
-  /* visibility:hidden; */
-  transition-delay: .2s,.2s;
-  transition: visibility, opacity .4s ease-in;
+  visibility:hidden;
+  transition: visibility 0s linear .2s, opacity .2s ease-in;
   position:absolute;
   top:0px;
   left:0px;
@@ -55,11 +47,13 @@ img.scene-el {
   pointer-events:none;
 }
 .scene-el.visible{
-  /* visibility:visible; */
+  visibility:visible;
   opacity:1;
+  /* display:block; */
   /* transition: all 1s ease-in; */
-  transition-delay: .2s,0s;
-  transition: visibility , opacity .2s ease-in;
+  /* transition-delay: .2s,0s; */
+
+  transition: visibility 0s linear 0s, opacity .4s ease-in .2s;
   pointer-events:all;
 }
 

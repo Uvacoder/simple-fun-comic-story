@@ -8,24 +8,6 @@ let scrollPos = 0;
 
 let interval = 600;
 
-//Create a list of all the cues, in order
-// Creates a list with all the elements associated with each cue
-// let cuesList = [];
-// scenes.forEach(function (scene) {
-//   console.log(scene);
-//   console.log(scene);
-//   let cues = Array.from(scene.getElementsByClassName("cue"));
-//   cues.forEach(function (cue) {
-//     console.log(cue);
-//     console.log(cue.dataset.cuenum);
-//     cuesList.push(cue);
-//   });
-// });
-
-// console.log(cuesList);
-// let direction = "forward";
-// let currentScene = document.querySelector(".scene1");
-
 function reportWindowSize() {
   let windowWidth = window.innerWidth;
   let windowHeight = window.innerHeight;
@@ -76,7 +58,6 @@ for (let i = 0; i < 200; i++) {
 
 sceneEls.forEach(function (sceneEl) {
   let cues = JSON.parse(sceneEl.dataset.cues);
-  console.log(sceneEl.dataset.cues);
   cues.forEach(function (cue) {
     cuesToEls[cue].push(sceneEl);
   });
@@ -105,11 +86,7 @@ function changeBgColor(index) {
 
 function changeScene(scrollPos) {
   let cueChanged = currentCueIndex !== Math.floor(scrollPos / interval);
-  if (cueChanged) {
-    console.log("CUE CHANGED!");
-  }
   currentCueIndex = Math.floor(scrollPos / interval);
-
   changeBgColor(currentCueIndex);
 
   //Make visible sceneEls that correspond to this index
