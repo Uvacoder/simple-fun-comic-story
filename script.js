@@ -113,3 +113,5 @@ window.onscroll = function (e) {
   scrollPos = window.scrollY;
   changeScene(window.scrollY);
 };
+
+console.log("Hi! if you're here.. buy me an iced latte sometime 🥺👉👈");
