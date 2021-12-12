@@ -29,12 +29,14 @@ a {
 
 .scene-el{
   opacity:0;
-  visibility:hidden;
-  -moz-transform: visibility 0s linear .2s, opacity .2s ease-in;
+  /* visibility:hidden; */
+  display:none;
+  /* -moz-transform: visibility 0s linear .2s, opacity .2s ease-in;
   -ms-transform: visibility 0s linear .2s, opacity .2s ease-in;
   -o-transform: visibility 0s linear .2s, opacity .2s ease-in;
-  -webkit-transform: visibility 0s linear .2s, opacity .2s ease-in;
-  transition: visibility 0s linear .2s, opacity .2s ease-in;
+  -webkit-transform: visibility 0s linear .2s, opacity .2s ease-in; */
+  /* transition: display 0s linear .2s, opacity .2s ease-in; */
+  transition: opacity .2s ease-in;
   position:absolute;
   top:0px;
   left:0px;
@@ -51,16 +53,17 @@ img.scene-el {
   pointer-events:none;
 }
 .scene-el.visible{
-  visibility:visible;
+  /* visibility:visible; */
   opacity:1;
   /* display:block; */
   /* transition: all 1s ease-in; */
   /* transition-delay: .2s,0s; */
-  -moz-transform: visibility 0s linear 0s, opacity .4s ease-in 0s;
+  /* -moz-transform: visibility 0s linear 0s, opacity .4s ease-in 0s;
   -ms-transform: visibility 0s linear 0s, opacity .4s ease-in 0s;
   -o-transform: visibility 0s linear 0s, opacity .4s ease-in 0s;
-  -webkit-transform: visibility 0s linear 0s, opacity .4s ease-in 0s;
-  transition: visibility 0s linear 0s, opacity .4s ease-in 0s;
+  -webkit-transform: visibility 0s linear 0s, opacity .4s ease-in 0s; */
+  /* transition: display 0s linear 0s, opacity .4s ease-in 0s; */
+  transition:  opacity .4s ease-in 0s;
   pointer-events:all;
 }
 

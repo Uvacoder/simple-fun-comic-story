@@ -98,12 +98,18 @@ function changeScene(scrollPos) {
     //if this prev scene El is not in this current one, remove it
     if (currentSceneEls.indexOf(sceneEl) == -1) {
       sceneEl.classList.remove("visible");
+      window.setTimeout(function () {
+        sceneEl.style.display = "none";
+      }, 300);
     }
   });
 
   //Show all the current ones
   currentSceneEls.forEach(function (sceneEl) {
-    sceneEl.classList.add("visible");
+    sceneEl.style.display = "block";
+    window.setTimeout(function () {
+      sceneEl.classList.add("visible");
+    }, 5);
   });
 }
 
