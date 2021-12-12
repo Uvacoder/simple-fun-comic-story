@@ -6,6 +6,8 @@
 body{
   font-family: JackieComic;
   color: #27263C;
+  background-color:white;
+  transition: background-color .4s;
 }
 
 .scroll-container{
