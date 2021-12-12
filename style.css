@@ -100,20 +100,20 @@ img.scene-el {
 
 .scene-el.s0a{
   left: 149px;
-  top: 143px;
+  top: 123px;
 }
 .scene-el.s0b{
   left: 822px;
-  top: 123px;
+  top: 103px;
 }
 .scene-el.s0c{
   left: 822px;
-  top: 123px;
+  top: 103px;
   opacity:.01;
 }
 .scene-el.s0d{
   left: 150px;
-  top: 520px;
+  top: 500px;
   font-size:32px;
   width:409px;
   line-height:1.4;
@@ -121,12 +121,12 @@ img.scene-el {
 
 .scene-el.s0e{
   left: 513px;
-  top: 382px;
+  top: 362px;
   font-size: 24px;
 }
 .scene-el.s0f{
   left: 150px;
-  top: 800px;
+  top: 780px;
 }
 a:hover{
   cursor:pointer !important;
