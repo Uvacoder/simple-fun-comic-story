@@ -32,13 +32,6 @@ a {
 .scene-el{
   opacity:0;
   display: none;
-  /* visibility:hidden; */
-
-  /* -moz-transform: visibility 0s linear .2s, opacity .2s ease-in;
-  -ms-transform: visibility 0s linear .2s, opacity .2s ease-in;
-  -o-transform: visibility 0s linear .2s, opacity .2s ease-in;
-  -webkit-transform: visibility 0s linear .2s, opacity .2s ease-in; */
-  /* transition: display 0s linear .2s, opacity .2s ease-in; */
   transition: opacity .2s ease-in, background .2s;
   position:absolute;
   top:0px;
@@ -56,16 +49,7 @@ img.scene-el {
   pointer-events:none;
 }
 .scene-el.visible{
-  /* visibility:visible; */
   opacity:1;
-  /* display:block; */
-  /* transition: all 1s ease-in; */
-  /* transition-delay: .2s,0s; */
-  /* -moz-transform: visibility 0s linear 0s, opacity .4s ease-in 0s;
-  -ms-transform: visibility 0s linear 0s, opacity .4s ease-in 0s;
-  -o-transform: visibility 0s linear 0s, opacity .4s ease-in 0s;
-  -webkit-transform: visibility 0s linear 0s, opacity .4s ease-in 0s; */
-  /* transition: display 0s linear 0s, opacity .4s ease-in 0s; */
   transition:  opacity .4s ease-in 0s, background .2s;
   pointer-events:all;
 }
@@ -747,42 +731,3 @@ a:hover{
   cursor:pointer;
   background: #7DB0B4;
 }
-
-/* .cue{
-  opacity:0;
-  visibility:hidden;
-  transition: visibility 0s, opacity .3s ease-in;
-
-}
-.cue.visible{
-  visibility:visible;
-  opacity:1;
-}
-.scene {
-
-  border: 2px solid red;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width:1440px;
-  height:900px;
-
-}
-
-.cue{
-  -webkit-font-smoothing: subpixel-antialiased;
-} */
-
-/* .scene.visible {
-
-} */
-
-/* .scene1{
-  background-color:pink;
-}
-
-.scene2{
-  background-color:blue;
-} */
