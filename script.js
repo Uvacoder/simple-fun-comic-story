@@ -127,3 +127,8 @@ window.onscroll = function (e) {
 };
 
 console.log("Hi! if you're here.. buy me an iced latte sometime 🥺👉👈");
+
+let startOverButton = document.getElementById("startOver");
+startOverButton.addEventListener("click", function () {
+  window.scrollTo(0, 0);
+});

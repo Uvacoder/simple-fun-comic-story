@@ -39,7 +39,7 @@ a {
   -o-transform: visibility 0s linear .2s, opacity .2s ease-in;
   -webkit-transform: visibility 0s linear .2s, opacity .2s ease-in; */
   /* transition: display 0s linear .2s, opacity .2s ease-in; */
-  transition: opacity .2s ease-in;
+  transition: opacity .2s ease-in, background .2s;
   position:absolute;
   top:0px;
   left:0px;
@@ -66,7 +66,7 @@ img.scene-el {
   -o-transform: visibility 0s linear 0s, opacity .4s ease-in 0s;
   -webkit-transform: visibility 0s linear 0s, opacity .4s ease-in 0s; */
   /* transition: display 0s linear 0s, opacity .4s ease-in 0s; */
-  transition:  opacity .4s ease-in 0s;
+  transition:  opacity .4s ease-in 0s, background .2s;
   pointer-events:all;
 }
 
@@ -727,6 +727,25 @@ a:hover{
   left:390px;
   top:480px;
   line-height:1.4;
+}
+
+.s31c{
+  padding: 16px 32px;
+  background: #98CFD4;
+  left: 50%;
+  transform: translatex(-50%);
+  top: 620px;
+  letter-spacing: 2px;
+  color: white;
+  border: none;
+  font-size: 24px;
+  border-radius: 16px;
+  font-family: JackieComic;
+  transition: background .2s;
+}
+.s31c:hover{
+  cursor:pointer;
+  background: #7DB0B4;
 }
 
 /* .cue{
