@@ -65,7 +65,7 @@ sceneEls.forEach(function (sceneEl) {
   let cues = JSON.parse(sceneEl.dataset.cues);
   cues.forEach(function (cue) {
     cuesToEls[cue].push(sceneEl);
-    sceneEl.style.display = "none";
+    // sceneEl.style.display = "none";
   });
 });
 

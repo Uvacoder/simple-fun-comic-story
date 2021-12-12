@@ -31,6 +31,7 @@ a {
 
 .scene-el{
   opacity:0;
+  display: none;
   /* visibility:hidden; */
 
   /* -moz-transform: visibility 0s linear .2s, opacity .2s ease-in;
