@@ -11,8 +11,13 @@ let interval = 600;
 function reportWindowSize() {
   let windowWidth = window.innerWidth;
   let windowHeight = window.innerHeight;
-  if (window.innerWidth < 1440 + 120) {
-    let scale = window.innerWidth / 1560;
+
+  let gutters = 120;
+  if (window.innerWidth < 600) {
+    gutters = 0;
+  }
+  if (window.innerWidth < 1440 + gutters) {
+    let scale = window.innerWidth / (1440 + gutters);
     let sceneContainer = document.getElementById("scene-container");
     let transform = window.getComputedStyle(sceneContainer).transform;
     sceneContainer.style.transform = `translate(-50%, -50%) scale(${scale})`;
@@ -25,8 +30,8 @@ function reportWindowSize() {
     sceneContainer.style.transform = `translate(-50%, -50%) scale(${scale})`;
   }
 
-  if (window.innerHeight < 900 && window.innerWidth < 1440 + 120) {
-    let scaleX = window.innerWidth / 1560;
+  if (window.innerHeight < 900 && window.innerWidth < 1440 + gutters) {
+    let scaleX = window.innerWidth / (1440 + gutters);
     let scaleY = window.innerHeight / 900;
     let ratio = window.innerWidth / window.innerHeight;
     let sceneContainer = document.getElementById("scene-container");
@@ -100,7 +105,7 @@ function changeScene(scrollPos) {
       sceneEl.classList.remove("visible");
       window.setTimeout(function () {
         sceneEl.style.display = "none";
-      }, 300);
+      }, 1000);
     }
   });
 
