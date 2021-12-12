@@ -105,7 +105,7 @@ function changeScene(scrollPos) {
       sceneEl.classList.remove("visible");
       window.setTimeout(function () {
         sceneEl.style.display = "none";
-      }, 1000);
+      }, 300);
     }
   });
 
