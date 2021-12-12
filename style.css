@@ -736,8 +736,8 @@ a:hover{
   transform: translatex(-50%);
   top: 620px;
   letter-spacing: 2px;
-  color: white;
-  border: none;
+  color: #27263C;
+  border: 4px solid #27263C;
   font-size: 24px;
   border-radius: 16px;
   font-family: JackieComic;
