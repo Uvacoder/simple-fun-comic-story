@@ -30,7 +30,11 @@ a {
 .scene-el{
   opacity:0;
   visibility:hidden;
-  /* transition: visibility 0s linear .2s, opacity .2s ease-in; */
+  -moz-transform: visibility 0s linear .2s, opacity .2s ease-in;
+  -ms-transform: visibility 0s linear .2s, opacity .2s ease-in;
+  -o-transform: visibility 0s linear .2s, opacity .2s ease-in;
+  -webkit-transform: visibility 0s linear .2s, opacity .2s ease-in;
+  transition: visibility 0s linear .2s, opacity .2s ease-in;
   position:absolute;
   top:0px;
   left:0px;
@@ -52,8 +56,11 @@ img.scene-el {
   /* display:block; */
   /* transition: all 1s ease-in; */
   /* transition-delay: .2s,0s; */
-
-  /* transition: visibility 0s linear 0s, opacity .4s ease-in 0s; */
+  -moz-transform: visibility 0s linear 0s, opacity .4s ease-in 0s;
+  -ms-transform: visibility 0s linear 0s, opacity .4s ease-in 0s;
+  -o-transform: visibility 0s linear 0s, opacity .4s ease-in 0s;
+  -webkit-transform: visibility 0s linear 0s, opacity .4s ease-in 0s;
+  transition: visibility 0s linear 0s, opacity .4s ease-in 0s;
   pointer-events:all;
 }
 
